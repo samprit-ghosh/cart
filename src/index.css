@@ -1,0 +1,236 @@
+@import "tailwindcss";
+/* Scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f1f1f1; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 6px;
+  border: 3px solid #f1f1f1; /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5e0909; /* Thumb color on hover */
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #650909; /* Track color on hover */
+}
+
+/* Scrollbar for Firefox */
+html {
+  scrollbar-width: thin; /* "auto", "thin", or "none" */
+  scrollbar-color: #e5ec0a #390797; /* Thumb and track color */
+}
+
+body{
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+/* button:hover{
+  background-color: #2207aa;
+} */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255);
+  /* background-image: linear-gradient(to top, #560940 0%, #a6c1ee 100%); */
+/* background-color: #560940; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+.close-btn{
+  background-color: #3216e8b8;
+  color: rgb(255, 255, 255);
+  margin:10px;
+}
+
+
+
+/* Global styles to override AliceCarousel defaults */
+.alice-carousel__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.alice-carousel__dots-item {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  background-color: #1a077d !important; /* Default dot color */
+  margin: 0 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.alice-carousel__dots-item:hover {
+  background-color: #000000 !important; /* Hover color */
+}
+
+.alice-carousel__dots-item.__active {
+  background-color: rgb(111, 6, 6) !important; /* Active dot color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+/* button:hover {
+  border-color: #646cff;
+} */
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.alice-carousel {
+    width: 100%;
+    /* max-width: 800px; */
+
+}
+
+.carousel-image {
+    border-radius: 10px;
+}
+
+
+.carousel-image{
+    background-repeat: no-repeat;
+background-size: cover;
+height: 80vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+a{
+  color:#1a1a1a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+/* Styles for tablets and small desktops (768px and above) */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Styles for medium desktops (1024px and above) */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #5e0909; */
+    margin-left: 32rem;
+  }
+}
+
+/* Styles for large desktops (1280px and above) */
+@media (min-width: 1280px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+
+@media(max-width:1250px){
+.container{
+
+
+
+  justify-items: center;
+  /* margin-left: 1rem; */
+}
+}
+
